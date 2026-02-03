@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>For Preethi ❤️</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    height:100vh;
+    overflow:hidden;
+}
+
+/* COMMON */
+.screen{
+    position:absolute;
+    width:100%;
+    height:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    color:white;
+    text-align:center;
+}
+
+button{
+    padding:15px 30px;
+    font-size:18px;
+    border:none;
+    border-radius:30px;
+    background:#ff2f68;
+    color:white;
+    cursor:pointer;
+    margin-top:20px;
+}
+
+button:hover{
+    background:#ff004c;
+}
+
+/* SCREEN 1 */
+#screen1{
+    background:linear-gradient(135deg,#ff4e7a,#ff758c);
+}
+
+#screen1 h1{
+    font-size:45px;
+}
+
+/* SCREEN 2 */
+#screen2{
+    background:url("preethi.jpg") center/cover no-repeat;
+    display:none;
+}
+
+.overlay{
+    background:rgba(0,0,0,0.6);
+    padding:40px;
+    border-radius:20px;
+}
+
+.overlay h1{
+    font-size:40px;
+}
+
+.overlay p{
+    font-size:22px;
+}
+
+/* SCREEN 3 */
+#screen3{
+    background:url("https://i.imgur.com/1ZQZ1Zm.png") center/cover no-repeat;
+    display:none;
+}
+
+.moneyBox{
+    background:rgba(0,0,0,0.7);
+    padding:40px;
+    border-radius:20px;
+}
+
+.moneyBox h1{
+    font-size:50px;
+    color:#00ff6a;
+}
+
+.moneyBox p{
+    font-size:22px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- SCREEN 1 -->
+<div id="screen1" class="screen">
+    <h1>Hey Preethi 💖</h1>
+    <h2>Click Here 👇</h2>
+    <button onclick="showSurprise()">Open</button>
+</div>
+
+<!-- SCREEN 2 -->
+<div id="screen2" class="screen">
+    <div class="overlay">
+        <h1>Happy Valentine's Day ❤️</h1>
+        <p>You are my today, my tomorrow, and my forever.</p>
+        <p>I Love You So Much 💕</p>
+        <button onclick="openGift()">Open Your Surprise Gift 🎁</button>
+    </div>
+</div>
+
+<!-- SCREEN 3 -->
+<div id="screen3" class="screen">
+    <div class="moneyBox">
+        <h1>₹2000 💵</h1>
+        <p>Your Valentine's Gift 😍</p>
+        <p>Ask your husband to send money 😄❤️</p>
+    </div>
+</div>
+
+<script>
+
+function showSurprise(){
+    document.getElementById("screen1").style.display="none";
+    document.getElementById("screen2").style.display="flex";
+}
+
+function openGift(){
+    document.getElementById("screen2").style.display="none";
+    document.getElementById("screen3").style.display="flex";
+}
+
+</script>
+
+</body>
+</html>
